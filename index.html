@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix Clone</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<!-- SIGN IN MODAL -->
+<div id="signinModal" class="modal hidden">
+  <div class="modal-content">
+    <span id="closeModal" class="close">&times;</span>
+
+    <h2>Sign In</h2>
+
+    <input
+      type="email"
+      id="signinEmail"
+      placeholder="Email address"
+    />
+
+    <input
+      type="password"
+      id="signinPassword"
+      placeholder="Password"
+    />
+
+    <button id="signinSubmit">Sign In</button>
+
+    <p id="signinMessage"></p>
+  </div>
+</div>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <img src="images/logo.png" alt="Netflix Logo" class="logo" />
+      <button id="signInBtn" class="signInBtn">Sign In</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="images/logo.png" alt="Netflix Logo" class="logo">
+    <div class="hero-content">
+      <h1>Unlimited movies, TV shows, and more.🎞️</h1>
+      <h2>Watch anywhere. Cancel anytime.</h2>
+      <p>Ready to watch? Enter your email to create or restart your membership.</p>
+      <div class="hero-input">
+        <input 
+          type="email" 
+          id="heroEmail"
+          placeholder="Email address" />
+        <button id="heroBtn">Get Started ></button>
+      </div>
+      <p id="heroMessage" class="hidden"></p>
+    </div>
+  </section>
+
+  <!-- Movies-->
+    <section class="movies">
+      <h2>Popular on Netflix</h2>
+      <div class="movie-row">
+        <img src="images/poster1.jpeg" alt="Movie 1">
+        <img src="images/poster2.jpeg" alt="Movie 2">
+        <img src="images/poster3.jpeg" alt="Movie 3">
+      </div>
+    </section>
+
+
+  <!-- Features -->
+  <section class="features">
+    <div class="feature">
+      <div class="text">
+        <h2>Enjoy on your TV.</h2>
+        <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+      </div>
+      <img src="images/feature1.jpeg" alt="TV Feature" />
+    </div>
+
+    <div class="feature reverse">
+      <img src="images/feature2.jpeg" alt="Mobile Feature" />
+      <div class="text">
+        <h2>Download your shows to watch offline.</h2>
+        <p>Save your favorites easily and always have something to watch.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBSCRIPTION SECTION -->
+    <section class="subscription">
+        <h2>Ready to watch? Enter your email to create or restart your membership.</h2>
+        <div class="subscribe-box">
+            <input type="email" id="emailInput" placeholder="Email address">
+            <button id="subscribeBtn">Get Started</button>
+        </div>
+
+        <!-- Hidden at first -->
+        <div id="plans" class="plans hidden">
+            <h3>Choose your plan</h3>
+            <ul>
+                <li><strong>Basic</strong> — $8.99/month</li>
+                <li><strong>Standard</strong> — $13.99/month</li>
+                <li><strong>Premium</strong> — $17.99/month</li>
+            </ul>
+        </div>
+    </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>This is a personal project inspired by Netflix.com</p>
+    <p>© 2025 Pranavi Kamada | Built with HTML, CSS & JS</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
